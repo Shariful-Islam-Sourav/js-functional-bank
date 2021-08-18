@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <!-- tailwind -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-4xl lg:text-7xl mt-14 text-center font-semibold">
+        আপনাকে স্বাগতম, <span class="text-green-400">সরকারী ব্যাংকে!</span>
+      </h1>
+    </header>
+    <section
+      class="
+        bg-green-100
+        w-11/12
+        lg:w-2/5
+        mx-auto
+        px-3
+        lg:px-8
+        py-14
+        rounded
+        mt-20
+        lg:mt-40
+        shadow-lg
+        border
+      "
+    >
+      <h2 class="font-semibold text-3xl mb-4 text-center">লগইন করুন</h2>
+      <div class="text-center">
+        <input
+          id="email-input"
+          class="block w-full lg:w-11/12 border p-2 rounded mb-2 border-green-200 mx-auto"
+          type="text"
+          placeholder="Enter your email"
+        />
+        <input
+          id="pass-input"
+          class="block w-full lg:w-11/12 border p-2 rounded mb-3 border-green-200 mx-auto"
+          type="password"
+          placeholder="Enter your password"
+          id=""
+        />
+        <button
+          id="login-button"
+          class="bg-green-500 px-8 py-2 rounded text-white shadow-md"
+        >
+          Login
+        </button>
+      </div>
+    </section>
+    <footer class="text-center mt-10 mb-3">
+      <small>
+        &copy; Developed by Shariful Islam Sourav
+      </small>
+    </footer>
+    <script src="js/login.js"></script>
+  </body>
+</html>

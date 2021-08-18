@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction</title>
+    <!-- tailwind -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-4xl lg:text-7xl mt-10 lg:mt-14 text-center font-semibold">
+        <span class="text-green-400">লেনদেন</span> করুন ইচ্ছামত!
+      </h1>
+    </header>
+    <main>
+      <section class="mt-12 lg:mt-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-4/5 mx-auto">
+          <div class="p-12 bg-green-200 rounded-xl">
+            <h2 class="text-2xl font-medium">জমা</h2>
+            <h2 class="text-4xl font-semibold"><span id="deposite-value">00</span>৳</h2>
+          </div>
+          <div class="p-12 bg-blue-200 rounded-xl">
+            <h2 class="text-2xl font-medium">উত্তোলন</h2>
+            <h2 class="text-4xl font-semibold"><span id="withdraw-value">00</span> ৳</h2>
+          </div>
+          <div class="p-12 bg-pink-200 rounded-xl">
+            <h2 class="text-2xl font-medium">মোট ব্যালেন্স</h2>
+            <h2 class="text-4xl font-semibold"><span id="balance-value">100</span>৳</h2>
+          </div>
+        </div>
+      </section>
+      <!-- Withdraw & Deposit -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-4 w-4/5 mx-auto mt-10 lg:mt-16">
+        <div class="bg-yellow-100 p-5 lg:p-12 rounded-2xl shadow-lg border-2 border-green-400">
+            <h2 class="text-2xl font-semibold mb-4">জমা করুন</h2>
+          <input
+            id="deposit-input"
+            class="block w-full lg:w-11/12 border p-2 rounded mb-2 border"
+            type="text"
+            placeholder="টাকার পরিমাণ দিন (৳)"
+          />
+          <button
+            id="deposit-button"
+            class="bg-green-500 px-8 py-2 rounded text-white shadow-md"
+          >
+            জমা 
+          </button>
+        </div>
+        <div class="bg-gray-200 p-5 lg:p-12 rounded-2xl shadow-lg border-2 border-green-400">
+            <h2 class="text-2xl font-semibold mb-4">উত্তোলন করুন</h2>
+          <input
+            id="withdraw-input"
+            class="block w-full lg:w-11/12 border p-2 rounded mb-2 border"
+            type="text"
+            placeholder="টাকার পরিমাণ দিন (৳)"
+          />
+          <button
+            id="withdraw-button"
+            class="bg-green-500 px-8 py-2 rounded text-white shadow-md"
+          >
+            উত্তোলন 
+          </button>
+        </div>
+      </section>
+      <footer class="text-center mt-10 mb-3">
+        <small>
+          &copy; Developed by Shariful Islam Sourav
+        </small>
+      </footer>
+    </main>
+    <script src="js/banking.js"></script>
+  </body>
+</html>
